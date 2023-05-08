@@ -1,7 +1,4 @@
-Sure, here is a basic API documentation format that you can use as a reference for building your own API documentation:
-
-# API Name
-[Insert the name of your API]
+# [Insert the name of your API]
 
 ## Overview
 [Insert a brief description of your API and its main features]
@@ -10,7 +7,6 @@ Sure, here is a basic API documentation format that you can use as a reference f
 [Insert information on how to authenticate with your API, including any required credentials or tokens]
 
 ## Endpoints
-[Insert a list of all available endpoints for your API, along with a brief description of their purpose and expected inputs/outputs. For example:]
 
 ### GET /users
 Returns a list of all users in the system.
@@ -20,26 +16,53 @@ Returns a list of all users in the system.
 - `per_page` (optional): The number of results per page (default: 10)
 
 #### Response
-- `status`: The HTTP status code of the response
-- `data`: An array of user objects, each containing the following fields:
-  - `id`: The user's unique identifier
-  - `name`: The user's name
-  - `email`: The user's email address
+```
+HTTP/1.1 200 OK
+Content-Type: application/json
+
+{
+  "status": 200,
+  "data": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "johndoe@example.com"
+    },
+    {
+      "id": 2,
+      "name": "Jane Doe",
+      "email": "janedoe@example.com"
+    }
+  ]
+}
+```
 
 ### POST /users
 Creates a new user in the system.
 
 #### Request Body
-- `name` (required): The user's name
-- `email` (required): The user's email address
-- `password` (required): The user's password
+```
+{
+  "name": "John Doe",
+  "email": "johndoe@example.com",
+  "password": "password123"
+}
+```
 
 #### Response
-- `status`: The HTTP status code of the response
-- `data`: The newly created user object, containing the following fields:
-  - `id`: The user's unique identifier
-  - `name`: The user's name
-  - `email`: The user's email address
+```
+HTTP/1.1 201 Created
+Content-Type: application/json
+
+{
+  "status": 201,
+  "data": {
+    "id": 1,
+    "name": "John Doe",
+    "email": "johndoe@example.com"
+  }
+}
+```
 
 ## Error Handling
 [Insert information on how errors are handled in your API, including any error codes and messages that may be returned]
@@ -53,4 +76,4 @@ Creates a new user in the system.
 ## Resources
 [Insert any additional resources, such as a changelog or API roadmap]
 
-This is just a basic format, and you can customize it according to your own needs and preferences. The most important thing is to provide clear and concise documentation that accurately describes your API's functionality and usage.
+Note: This is just a basic format, and you can customize it according to your own needs and preferences. The most important thing is to provide clear and concise documentation that accurately describes your API's functionality and usage.
