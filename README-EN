@@ -1,45 +1,56 @@
-API Name
+Sure, here is a basic API documentation format that you can use as a reference for building your own API documentation:
 
-
-
+# API Name
 [Insert the name of your API]
-Overview
+
+## Overview
 [Insert a brief description of your API and its main features]
-Authentication
+
+## Authentication
 [Insert information on how to authenticate with your API, including any required credentials or tokens]
-Endpoints
+
+## Endpoints
 [Insert a list of all available endpoints for your API, along with a brief description of their purpose and expected inputs/outputs. For example:]
-GET /users
+
+### GET /users
 Returns a list of all users in the system.
-Request Parameters
-page (optional): The page number to return (default: 1)
-per_page (optional): The number of results per page (default: 10)
-Response
-status: The HTTP status code of the response
-data: An array of user objects, each containing the following fields:
-id: The user's unique identifier
-name: The user's name
-email: The user's email address
-POST /users
+
+#### Request Parameters
+- `page` (optional): The page number to return (default: 1)
+- `per_page` (optional): The number of results per page (default: 10)
+
+#### Response
+- `status`: The HTTP status code of the response
+- `data`: An array of user objects, each containing the following fields:
+  - `id`: The user's unique identifier
+  - `name`: The user's name
+  - `email`: The user's email address
+
+### POST /users
 Creates a new user in the system.
-Request Body
-name (required): The user's name
-email (required): The user's email address
-password (required): The user's password
-Response
-status: The HTTP status code of the response
-data: The newly created user object, containing the following fields:
-id: The user's unique identifier
-name: The user's name
-email: The user's email address
-Error Handling
+
+#### Request Body
+- `name` (required): The user's name
+- `email` (required): The user's email address
+- `password` (required): The user's password
+
+#### Response
+- `status`: The HTTP status code of the response
+- `data`: The newly created user object, containing the following fields:
+  - `id`: The user's unique identifier
+  - `name`: The user's name
+  - `email`: The user's email address
+
+## Error Handling
 [Insert information on how errors are handled in your API, including any error codes and messages that may be returned]
-Rate Limiting
+
+## Rate Limiting
 [Insert information on any rate limiting or throttling that is in place for your API]
-SDKs and Libraries
+
+## SDKs and Libraries
 [Insert a list of SDKs and client libraries that are available for your API]
-Resources
+
+## Resources
 [Insert any additional resources, such as a changelog or API roadmap]
+
 This is just a basic format, and you can customize it according to your own needs and preferences. The most important thing is to provide clear and concise documentation that accurately describes your API's functionality and usage.
-
-
