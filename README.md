@@ -1,5 +1,9 @@
 다음은 API 연동 규격서를 위한 간단한 포맷 예시입니다.
 
+```
+npm install express
+```
+
 # API 연동 규격서
 
 ## 1. API 요청 URL 및 HTTP Method
