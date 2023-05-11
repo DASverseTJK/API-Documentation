@@ -1,3 +1,5 @@
+https://documenter.getpostman.com/view/27217697/2s93ebSqHk
+
 Introduction
 What does your API do?
 G1 CASH 라는 앱의 회원가입과 로그인을 다루는 백엔드 부분을 Node.js 와 Postman 을 이용해 구현 해 보았습니다.
