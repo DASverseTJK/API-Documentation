@@ -1,3 +1,7 @@
+- JWT 없이 구현 했던 파일입니다. JWT 를 접하고 처음부터 다시 시작했습니다. 
+- https://github.com/DASverseTJK/StudyNote 로 이동해주세요
+
+
 https://documenter.getpostman.com/view/27217697/2s93ebSqHk
 
 Introduction
